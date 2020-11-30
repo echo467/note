@@ -115,6 +115,21 @@
 
 + ###### git branch -D branchName,可以用来强行删除一个没有合并过的分支。
 
+### 实操
+
+```bash
+git clone url  #克隆项目
+
+git commit        #需要先commit一下才能新建branch
+git branch test   #新建branch
+git checkout test #切换分支
+git add .         
+git commit
+git push origin test:test  #将本地的test分支提交到远程test分支上
+```
+
+
+
 ### 遇到问题
 
 #### git push origin master 报错
