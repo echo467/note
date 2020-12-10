@@ -75,13 +75,13 @@
 
 + ###### 当只有一条分支时，HEAD指向master，master指向提交；也就是说利用HEAD就能确定当前分支的提交点。每次提交时master分支都会向前移动一步；
 
-  ![image-20201015142419632](images.assets\image-20201015142419632.png)
+  ![image-20201015142419632](https://gitee.com/ly10208/images/raw/master/img/20201210210317.png)
 
 + ###### 当新建一个分支dev时，会指向与master相同的提交，HEAD会指向dev，就表示当前分支在dev上面。
 
 + ###### 当dev提交时，dev指针向前移动一步，但master指针不变
 
-  ![image-20201015142729847](images.assets\image-20201015142729847.png)
+  ![image-20201015142729847](https://gitee.com/ly10208/images/raw/master/img/20201210210355.png)
 
 + ###### 当dev分支上的工作完成了，就可以把dev合并到master分支上，可以简单的将master指针指向dev的提交，然后把HEAD指向master。
 
@@ -101,7 +101,7 @@
 
 + ###### 当使用 no-ff模式合并分支时，会创建一个新的commit，合并后如图。git merge --no-ff -m "message" dev
 
-  ![image-20201015145151781](images.assets\image-20201015145151781.png)
+  ![image-20201015145151781](https://gitee.com/ly10208/images/raw/master/img/20201210210426.png)
 
 ##### Bug分支
 

@@ -40,7 +40,7 @@ JavaWeb
 #### 原理
 
 + servlet是由Web服务器（tomcat）调用，服务器会生成一个request对象存放请求的参数，和一个response对象；并交给底层的servlet的service方法处理，并将响应结果放到response中返回给客户端
-+ ![image-20201108150132864](images.assets\image-20201108150132864.png)
++ ![image-20201108150132864](https://gitee.com/ly10208/images/raw/master/img/20201210204904.png)
 
 #### ServletContex
 

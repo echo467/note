@@ -125,7 +125,7 @@ public interface userMapper {
 
 ##### 项目结构
 
-![image-20201115105203298](images.assets\image-20201115105203298.png)
+![image-20201115105203298](https://gitee.com/ly10208/images/raw/master/img/20201210205109.png)
 
 + userMapper.xml文件即可以放到java路径下，又可以放到resources路径下
 
@@ -182,7 +182,7 @@ public interface userMapper {
 
 #### 3.1 原理图
 
-![image-20201115135240916](images.assets\image-20201115135240916.png)
+![image-20201115135240916](https://gitee.com/ly10208/images/raw/master/img/20201210205145.png)
 
 #### 3.2 解析
 
@@ -199,7 +199,7 @@ public interface userMapper {
 
 + SqlSession，连接到连接池的一个请求，非线程安全不可共享，使用完成需要关闭。作用域是请求或方法作用域
 
-  ![image-20201115140914868](images.assets\image-20201115140914868.png)
+  ![image-20201115140914868](https://gitee.com/ly10208/images/raw/master/img/20201210205149.png)
 
 ### 4.  配置解析
 
@@ -768,5 +768,5 @@ public class Teacher {
 
 #### 7.4 缓存原理
 
-![image-20201116214035087](images.assets\image-20201116214035087.png)
+![image-20201116214035087](https://gitee.com/ly10208/images/raw/master/img/20201210205655.png)
 

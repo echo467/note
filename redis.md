@@ -23,7 +23,7 @@ redis
 + 列存储数据库，Hbase、Cassandra
 + 图关系数据库，Neo4j
 
-![image-20201117104405775](images.assets\image-20201117104405775.png)
+![image-20201210194552639](https://gitee.com/ly10208/images/raw/master/img/20201210194552.png)
 
 ### redis基础
 
@@ -388,7 +388,7 @@ appendonly no                     #默认关闭aof
 appendfilename "appendonly.aof"   #aof文件名
 ```
 
-![image-20201117211931480](images.assets\image-20201117211931480.png)
+![image-20201210194619182](https://gitee.com/ly10208/images/raw/master/img/20201210194619.png)
 
 + 每次会将写入命令追加到aof文件的末尾
 + aof文件会越来越庞大，超过一定阈值将会触发重写操作（将命令精简，多条合成一条）
@@ -423,7 +423,7 @@ appendfsync everysec           #同步规则，always、everysec、no
 
 + redis发布订阅是一种消息通信模式，**发送者发送消息，订阅者接收消息**
 
-![image-20201119135631673](images.assets\image-20201119135631673.png)
+  ![image-20201210195622492](https://gitee.com/ly10208/images/raw/master/img/20201210195622.png)
 
 #### 命令
 
@@ -453,7 +453,7 @@ pubsub channels          #列出活跃的频道（至少有一个订阅者的频
 + 其中字典的键则是**频道名**，值是一个保存了所有**订阅者的链表**
 + 用户订阅时，则放到链表尾部；退订则将其移除
 
-![image-20201119140031259](images.assets\image-20201119140031259.png)
+![image-20201210195648627](https://gitee.com/ly10208/images/raw/master/img/20201210195648.png)
 
 #### 缺点
 
@@ -539,7 +539,7 @@ slaveof ip port  #将当前redis服务器作为从机，并绑定主机的地址
 + 当从机不是第一次连接到主机，会执行`psync runid offset`发送给主机，主机就可以只发送从机缺少的一部分，此时就是部分重同步。
 + 但是如果runid不对，或者复制积压缓冲区中没有足够的命令，就会进行完整重同步
 
-![image-20201119151324366](images.assets\image-20201119151324366.png)
+![](https://gitee.com/ly10208/images/raw/master/img/20201210194819.png)
 
 ##### 命令传播
 
